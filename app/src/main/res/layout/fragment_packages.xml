@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pikchillytechnologies.myfragmentapplication.PackagesFragment"
+    >
+
+    <LinearLayout
+        android:id="@+id/line1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Health Checkup Package 01"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/price_textview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="$2500"
+            android:textSize="14sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="$2500"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="28 Tests included"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:layout_weight="2.5"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:text="50% off"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Valid on All days:"
+            android:textColor="#636363"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="All days"
+            android:gravity="center"
+            android:textColor="#636363"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line4_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line3_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="i"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Details"
+            android:textColor="#636363"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:text="ADD TO CART"
+            android:textColor="#636363"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+
+    <!--TextView and Button displayed in Packages Fragment-->
+   <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="This is Packages Fragment"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/secondButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Packages Fragment"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+        -->
+</RelativeLayout>

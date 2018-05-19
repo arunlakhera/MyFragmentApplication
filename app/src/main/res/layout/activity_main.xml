@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/viewPager"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/back"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/heart"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/share"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/heart"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@id/heart"
+        >
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo_camera"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="10"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            />
+    </LinearLayout>
+
+
+   <LinearLayout
+       android:id="@+id/button_layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="#FFFFFF"
+       android:layout_below="@id/viewPager"
+       >
+       <Button
+           android:id="@+id/about_button"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:text="About"
+           android:textColor="#636363"
+           android:textStyle="bold"
+           android:background="#FFFFFF"
+           />
+       <Button
+           android:id="@+id/packages_button"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:text="Packages"
+           android:textColor="#636363"
+           android:textStyle="bold"
+           android:background="#FFFFFF"
+           />
+       <Button
+           android:id="@+id/tests_button"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:text="Tests"
+           android:textColor="#636363"
+           android:textStyle="bold"
+           android:background="#FFFFFF"
+           />
+   </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/button_layout"
+        />
+
+</RelativeLayout>
